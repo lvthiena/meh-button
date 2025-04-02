@@ -83,7 +83,7 @@ export default function App() {
       {/* Powered by Giphy Footer */}
       <footer className="mt-8 text-center text-sm opacity-60">
         <p>Powered by <a href="https://giphy.com" target="_blank" rel="noopener noreferrer">
-          <img src="/images/giphy_logo.png" alt="Giphy Logo" className="w-20" />
+          <img src="/images/Poweredby_100px-White_VertLogo.png" alt="Giphy Logo" className="w-20" />
         </a></p>
       </footer>
     </div>
