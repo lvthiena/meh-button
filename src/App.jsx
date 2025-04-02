@@ -78,7 +78,14 @@ export default function App() {
         </motion.div>
       )}
 
-      <div className="mt-12 opacity-30 text-sm italic">Tekrar basma. Ya da bas. Ne fark eder?</div>
+       <div className="mt-12 opacity-30 text-sm italic">Don’t press again. Or press. What’s the difference?</div>
+
+      {/* Powered by Giphy Footer */}
+      <footer className="mt-8 text-center text-sm opacity-60">
+        <p>Powered by <a href="https://giphy.com" target="_blank" rel="noopener noreferrer">
+          <img src="/images/giphy_logo.png" alt="Giphy Logo" className="w-20" />
+        </a></p>
+      </footer>
     </div>
   );
 }
