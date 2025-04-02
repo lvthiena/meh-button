@@ -28,7 +28,7 @@ export default function App() {
         transition={{ duration: 0.6 }}
         className="text-2xl md:text-4xl font-bold text-center mb-6 border border-black bg-white px-4 py-2 shadow-lg"
       >
-        Got nothing to do? Perfect. This button is made for you.
+        Sıkıldın mı? Harika! Bu buton senin için.
       </motion.h1>
 
       <motion.button
@@ -78,7 +78,7 @@ export default function App() {
         </motion.div>
       )}
 
-      <div className="mt-12 opacity-30 text-sm italic">Don’t press again. Or press. What’s the difference?</div>
+      <div className="mt-12 opacity-30 text-sm italic">Tekrar basma. Ya da bas. Ne fark eder?</div>
     </div>
   );
 }
