@@ -74,7 +74,7 @@ export default function App() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          🌊 Surf Time! Wuhuuu!
+          🌊 Sörf Zamanı! Wuhuuu!
         </motion.div>
       )}
 
