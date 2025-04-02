@@ -1,20 +1,22 @@
-
-import React, { useEffect, useState } from "react";
-import generateRandomItem from "./MehButton";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import generateRandomItem from "./MehButton"; // Giphy and text generation function
 
 export default function App() {
-  const [item, setItem] = useState(null);
-  const [clicks, setClicks] = useState(0);
-  const [showWave, setShowWave] = useState(false);
+  const [item, setItem] = useState(null); // Content: GIF or text
+  const [clicks, setClicks] = useState(0); // Click counter
+  const [showWave, setShowWave] = useState(false); // Surf animation state
 
+  // Handle button click
   const handleClick = async () => {
-    setClicks(prev => prev + 1);
-    const newItem = await generateRandomItem();
-    setItem(newItem);
+    setClicks(prev => prev + 1); // Increment the click count
+    const newItem = await generateRandomItem(); // Fetch a new item
+    setItem(newItem); // Set new content in state
+
+    // Show surf animation on every 10th click
     if ((clicks + 1) % 10 === 0) {
       setShowWave(true);
-      setTimeout(() => setShowWave(false), 2000);
+      setTimeout(() => setShowWave(false), 2000); // Hide wave after 2 seconds
     }
   };
 
@@ -26,7 +28,7 @@ export default function App() {
         transition={{ duration: 0.6 }}
         className="text-2xl md:text-4xl font-bold text-center mb-6 border border-black bg-white px-4 py-2 shadow-lg"
       >
-        Yapacak işin mi yok? Harika. Bu buton tam sana göre.
+        Got nothing to do? Perfect. This button is made for you.
       </motion.h1>
 
       <motion.button
@@ -35,9 +37,10 @@ export default function App() {
         transition={{ duration: 0.2 }}
         className="bg-white text-black border border-black px-6 py-2 text-lg font-bold shadow-md hover:bg-gray-200 cursor-pointer glitch"
       >
-        ¯\\_(ツ)_/¯
+        ¯\\\\_(ツ)_/¯
       </motion.button>
 
+      {/* Display new content */}
       {item && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -63,6 +66,7 @@ export default function App() {
         </motion.div>
       )}
 
+      {/* Show surf animation after the 10th click */}
       {showWave && (
         <motion.div
           className="fixed top-0 left-0 w-full h-full bg-gradient-to-br from-blue-200 to-indigo-300 bg-opacity-70 flex items-center justify-center text-3xl font-bold text-white"
@@ -70,11 +74,11 @@ export default function App() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          🌊 Sörf Zamanı! Wuhuuu!
+          🌊 Surf Time! Wuhuuu!
         </motion.div>
       )}
 
-      <div className="mt-12 opacity-30 text-sm italic">Tekrar basma. Ya da bas. Ne fark eder.</div>
+      <div className="mt-12 opacity-30 text-sm italic">Don’t press again. Or press. What’s the difference?</div>
     </div>
   );
 }
