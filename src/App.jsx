@@ -81,20 +81,18 @@ export default function App() {
        <div className="mt-12 opacity-30 text-sm italic">Bas ya da basma. Ne fark eder ki?</div>
 
     {/* Powered by Giphy Footer */}
-<footer className="mt-8 text-center text-sm opacity-60 relative">
-  <p>
-    <a href="https://giphy.com" target="_blank" rel="noopener noreferrer">
-      <img
-        src="/images/Poweredby_100px-White_VertLogo.png"
-        alt="Giphy Logo"
-        style={{
-          width: "70px",
-          opacity: 0.4,
-          position: "absolute",
-          bottom: "10px",
-          right: "10px"
-        }}
-      />
-    </a>
-  </p>
+<footer className="mt-8 text-center text-sm opacity-60 relative" style={{ position: "relative" }}>
+  <a href="https://giphy.com" target="_blank" rel="noopener noreferrer">
+    <img
+      src="/images/Poweredby_100px-White_VertLogo.png"
+      alt="Giphy Logo"
+      style={{
+        width: "70px",
+        opacity: 0.4,
+        position: "absolute",
+        bottom: "10px",
+        right: "10px"
+      }}
+    />
+  </a>
 </footer>
