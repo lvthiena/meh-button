@@ -2,7 +2,7 @@
 import React, { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 
-const apiKey = "Sz4dtWn3L6lc2HEHMcGEtKfZRjWQsLZs";
+const apiKey = process.env.REACT_APP_GIPHY_KEY;
 
 async function generateRandomItem() {
   const isGif = Math.random() > 0.5;
