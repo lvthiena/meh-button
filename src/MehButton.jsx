@@ -9,7 +9,7 @@ async function generateRandomItem() {
 
   if (isGif) {
     try {
-      const res = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=meh+funny+weird&rating=pg`);
+      const res = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=weird+funny&rating=pg`);
       const data = await res.json();
       let gifUrl = data.data.images.original.url;
       if (gifUrl === window.lastGif) {
