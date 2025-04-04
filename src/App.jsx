@@ -28,7 +28,7 @@ export default function App() {
         transition={{ duration: 0.6 }}
         className="text-2xl md:text-4xl font-bold text-center mb-6 border border-black bg-white px-4 py-2 shadow-lg"
       >
-        Sıkıldın mı? Harika! Bu buton senin için.
+        Meh anlar için bu butona bas.
       </motion.h1>
 
       <motion.button
