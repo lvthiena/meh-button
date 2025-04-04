@@ -78,7 +78,7 @@ export default function App() {
         </motion.div>
       )}
 
-       <div className="mt-12 opacity-30 text-sm italic">Bir daha basma. Ya da bas. Ne fark eder ki?</div>
+       <div className="mt-12 opacity-30 text-sm italic">Bas ya da basma. Ne fark eder ki?</div>
 
       {/* Powered by Giphy Footer */}
       <footer className="mt-8 text-center text-sm opacity-60">
